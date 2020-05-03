@@ -19,25 +19,9 @@ There are different types of forms that can be created using diffrent languages 
 
 We will use the following HTML elements: `<form>`,`<label>`,`<input>`,`<textarea>`,`<button>`,`<fieldset>`
 
-Before you go further, make a local copy of the simple [HTML form template](https://github.com/nimritee/creatingForms/blob/master/basicForm/index.html) and save as file_name.html ()
+Before you go further, make a local copy of the simple [HTML form template](https://github.com/nimritee/creatingForms/blob/master/basicForm/index.html) and save as yourfilename.html
 
 ### Points to remember
-
+<ul>
+<li type="circle">
 Before starting to code, it is always important to take time and think about the form design. From a user experience point of view, it's imporant to remember that the bigger the form, the more you risk frustrating people and loosing users.
-
-
-
-
-
-
-
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](https://en.wikipedia.org/wiki/Salted_duck_egg).
-
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.

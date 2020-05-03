@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Nimritee Sirsalewala Tech Blogs`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Nimritee Sirsalewala`,
+      summary: `Passionate Coder, Aspiring Entrpreneur.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `A tech blog.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `kylemathews`,
