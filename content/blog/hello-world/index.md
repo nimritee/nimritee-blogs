@@ -4,9 +4,9 @@ date: "2020-05-03T22:12:03.284Z"
 description: "Whether you want to create a simple login page or a moderately complex payment page, or an interactive web application, you will be using the HTML form elements."
 ---
 
-Forms are required, when you want to collect some data from the visior. For example during user registration you collect information such as name, mobile number, email-address, etc depending upon the requirements.
+Forms are required, when you want to collect some data from the visitor. For example during user registration you collect information such as name, mobile number, email-address, etc depending upon the requirements.
 
-There are different types of forms that can be created using diffrent languages and style. This blog focusus on your first experience of creating a web form which includes designing a simple form, implementing it using the right HTML form controls and other HTML elements and adding some very simple styling via CSS. We'll expand on each of these subtopics in more detail later on in the module.
+There are different types of forms that can be created using diffrent languages and style. This blog mainly focuses on your first experience of creating a web form which includes designing a simple form, implementing it using the right HTML form controls and other HTML elements and adding some very simple styling using CSS. We'll talk about these subtopics in more detail, later in the blog.
 
 ![Basic Contact Form](./basic_contact_form.png)
 
