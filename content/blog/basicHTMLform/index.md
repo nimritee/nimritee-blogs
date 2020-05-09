@@ -1,5 +1,5 @@
 ---
-title: Create a basic html form
+title: create a basic html form
 date: "2020-05-03T22:12:03.284Z"
 description: "Whether you want to create a simple login page or a moderately complex payment page, or an interactive web application, you will be using the HTML form elements."
 ---
@@ -20,7 +20,7 @@ We will use the following HTML elements: `<form>`,`<label>`,`<input>`,`<textarea
 
 Before you go further, make a local copy of the simple <a href="https://github.com/nimritees/creatingForms/blob/master/basicForm/index.html" target="_blank">HTML form template</a> and save as yourfilename.html
 
-All forms start with a `<form>` element, and ens with `</form>`.
+All forms start with a `<form>` element, and ends with `</form>`.
 
 In our form, the data entry portion contains wide range of HTML elements such as:
 
@@ -36,6 +36,43 @@ In our form, the data entry portion contains wide range of HTML elements such as
 
 >`<label>`<br>
 >The HTML `<label>` element represents a caption for elements of the form.<br>
+
+####*Example - 1*
+The code snippet creates an input box to accept Name.
+```
+<label for="name">
+	<span>Name: </span> 
+</label>
+<input type="text" id="name" name="username"></input>
+```
+![Example -1 ](./example_1.png)
+
+>`<filedset>`<br>
+>The HTML `<fieldset>` element is used to group related elements in a form together by drawing a box around the realted items. The `<legend>` tag defines the caption for the `<fieldset>` element.
+
+####*Example - 2*
+
+```
+<fieldset id="qualification">
+<legend>Education Qualification</legend>
+    <p>
+        <label for="degree_details">
+            <span>Qualification Details: </span>
+        </label>
+        <input type="text" id="degree_details" name="Qualification info">
+    </p>
+    <p>
+        <label for="yop">
+            <span>Year of Passing: </span>
+        </label>
+        <input id="yop" type="month" name="year_of_passing" min="1900-01" max="2020-12">                
+    </p>
+</fieldset>
+```
+![Example - 2](./example_4.png)
+
+
+
 
 
 ### Points to remember

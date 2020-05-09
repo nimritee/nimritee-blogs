@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Nimritee Sirsalewala Tech Blogs`,
+    title: `Technical Blogs`,
     author: {
       name: `Nimritee Sirsalewala`,
-      summary: `Passionate Coder, Aspiring Entrpreneur.`,
+      summary: `Passionate Coder, Aspiring Entrepreneur.`,
     },
     description: `A tech blog.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `nimritee`,
     },
   },
   plugins: [
