@@ -1,6 +1,7 @@
 ---
-title: My Second Post!
-date: "2015-05-06T23:46:37.121Z"
+title: CSS tricks that would make web designing easier
+date: "2020-05-10T18:49:37.121Z"
+description: "3 simple CSS tricks that would help you develop web pages a little better and faster. Among these are backgroud-repeat, media queries and how to import a new library in CSS."
 ---
 
 Wow! I love blogging so much already.

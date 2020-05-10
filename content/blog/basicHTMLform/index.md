@@ -1,5 +1,5 @@
 ---
-title: create a basic html form
+title: Create a basic HTML form
 date: "2020-05-03T22:12:03.284Z"
 description: "Whether you want to create a simple login page or a moderately complex payment page, or an interactive web application, you will be using the HTML form elements."
 ---
