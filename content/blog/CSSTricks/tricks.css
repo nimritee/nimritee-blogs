@@ -1,0 +1,57 @@
+.shadow {
+    background: #F7F8F9;
+    padding: 3px;
+    margin: 10px 0;
+    }
+.space {
+    margin-bottom: 25px!important;
+}
+table.data th {
+    color: #000;
+    padding: 8px 7px;
+    text-align: left;
+    font-size: 15px;
+    background: #F8F8F8;
+}
+table.data th, table.data td {
+    vertical-align: top;
+    border: 1px solid #DCE3EB;
+    border-top-color: rgb(220, 227, 235);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(220, 227, 235);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(220, 227, 235);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(220, 227, 235);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+table.data td {
+    color: #484848;
+    padding: 5px 7px;
+    background: #fff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+}
