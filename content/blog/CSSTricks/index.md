@@ -98,4 +98,4 @@ body {
 ![background-repeat](./background-repeat.png)<br>
 <i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/background-repeat" target="_blank"> here</a></i>.
 
-## 2. background-blend-mode
+## 2. mask-image
