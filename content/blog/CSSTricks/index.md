@@ -1,5 +1,5 @@
 ---
-title: CSS tricks with images that would make web designing easier
+title: CSS tricks with images
 date: "2020-05-10T18:49:37.121Z"
 description: "Simple CSS tricks with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, media queries and how to import a new library in CSS."
 ---
