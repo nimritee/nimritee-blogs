@@ -96,4 +96,4 @@ body {
     background-repeat: repeat;
 }
 ```
-![background-repeat](./image1.png)
+![background-repeat](./background-repeat.png)
