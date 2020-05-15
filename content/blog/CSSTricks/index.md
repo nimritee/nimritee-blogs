@@ -1,7 +1,7 @@
 ---
 title: CSS can do that with images
 date: "2020-05-10T18:49:37.121Z"
-description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image."
+description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover."
 ---
 
 *This article shares some of my most pleasing moments learning CSS, and I hope it's the same for you as well.*
@@ -143,6 +143,7 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
  ```
  In the below image, 1st part is the original image and second part is masked image with radial-gradient.
 
+
 ![Radial-Gradient](./radial.png)
 
 ### Masking using Images
@@ -162,5 +163,30 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
  ![Masking with Images](./image.png)
  
 <i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/mask-images" target="_blank"> here</a></i>.
+
+## 3. Zoom on hover
+A zoom effect on images when users hovers over them makes the web pages more attractive. This kind of effect can be used in galleries, selling products where you need to enlarge the image so that customers can have a better view.
+
+The CSS <font color ="#905"><span style="background-color:#e1e2e3">transform</span></font> property is used for enlargemnet of images with your preffered scale amount. It provides a way to control animation speed when changing CSS properties.
+
+ <b>Syntax</b>
+ ```CSS
+ transform: scale [transition-duration] [transition-timing-function] [transition-delay];
+ ```
+
+ <b>CSS Example</b>
+ ```CSS
+img:hover {
+    transform: scale(1.1);
+}
+ ```
+<img src="zoom2.png">
+<style>
+img:hover {
+    transform: scale(1.1);
+}
+</style>
+<br>
+<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/zoom-on-hover" target="_blank"> here</a></i>.
 
 
