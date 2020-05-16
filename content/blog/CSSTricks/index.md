@@ -1,7 +1,7 @@
 ---
 title: CSS can do that with images
 date: "2020-05-10T18:49:37.121Z"
-description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image."
+description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover,scroll-snap-type"
 ---
 
 *This article shares some of my most pleasing moments learning CSS, and I hope it's the same for you as well.*
@@ -143,6 +143,7 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
  ```
  In the below image, 1st part is the original image and second part is masked image with radial-gradient.
 
+
 ![Radial-Gradient](./radial.png)
 
 ### Masking using Images
@@ -163,4 +164,93 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
  
 <i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/mask-images" target="_blank"> here</a></i>.
 
+## 3. Zoom on hover
+A zoom effect on images when users hovers over them makes the web pages more attractive. This kind of effect can be used in galleries, selling products where you need to enlarge the image so that customers can have a better view.
 
+The CSS <font color ="#905"><span style="background-color:#e1e2e3">transform</span></font> property is used for enlargemnet of images with your preffered scale amount. It provides a way to control animation speed when changing CSS properties.
+
+ <b>Syntax</b>
+ ```CSS
+ transform: scale [transition-duration] [transition-timing-function] [transition-delay];
+ ```
+
+ <b>CSS Example</b>
+ ```CSS
+img:hover {
+    transform: scale(1.1);
+}
+ ```
+ <div class=hover_apply>
+    <img src="zoom2.png" alt="Zoom on hover">
+</div>
+<style>
+.hover_apply img:hover {
+    transform: scale(1.1);
+}
+</style>
+<br>
+<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/zoom-on-hover" target="_blank"> here</a></i>.
+
+## 4. scroll-snap-type
+
+CSS <font color ="#905"> <span style="background-color:#e1e2e3">scroll-snap-type</span></font> property allows the developer to create well-controlled scroll experiences. This property can be used in the gallery section of the web-page.
+
+Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style="background-color:#e1e2e3">scroll-snap-type</span></font> property on a container element.  The scroll-snap-type decides the axis on which scrolling occours <b>x</b> or <b>y</b>.
+
+
+<b>Syntax</b>
+ ```CSS
+ scroll-snap-type: [none | x | y] [mandatory | proximity];
+ ```
+*The `mandatory` means the browser has to snap to a snap point whenever the user stops scrolling.*
+*The `proximity`  is less strict, it allows the browser to a snap point if it seems appropriate.* 
+
+
+ <b>CSS Example</b>
+ ```CSS
+.y-scrolling {
+      scroll-snap-type: y mandatory;
+  }
+ ```
+<body>
+<div class="box y-scrolling">
+    <div>Eat</div>
+    <div>Sleep</div>
+    <div>Code</div>
+    <div>Repeat</div>
+</div>
+</body>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .box {
+    display: flex;
+    overflow: auto;
+    flex: none;
+    width: 30vw;
+    height: 30vh;
+    flex-flow: column nowrap;
+  }
+  .y-scrolling {
+      scroll-snap-type: y mandatory;
+  }
+  .box > div {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+    line-height: 3;
+    font-size: 80px;
+    width: 100%;
+    height: 100%;
+  }
+  .box > div:nth-child(even) {
+    background-color: #42f2f5;
+  }
+  .box > div:nth-child(odd) {
+    background-color: rgb(234, 238, 17);
+  }
+</style>
