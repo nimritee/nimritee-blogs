@@ -159,6 +159,7 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
  mask-image: url(https://images.png);
  }
  ```
+ In the below example, a background image is used to mask an image of a camera out of it. 
 
  ![Masking with Images](./image.png)
  
@@ -180,6 +181,8 @@ img:hover {
     transform: scale(1.1);
 }
  ```
+ In the below example, the image zooms out on hover.
+
  <div class=hover_apply>
     <img src="zoom2.png" alt="Zoom on hover">
 </div>
@@ -212,6 +215,8 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
       scroll-snap-type: y mandatory;
   }
  ```
+ The below example shows, scroll-snap-type along Y axis with mandatory value. 
+
 <body>
 <div class="box y-scrolling">
     <div>Eat</div>
@@ -221,17 +226,11 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
 </div>
 </body>
 <style>
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .box {
+.box {
     display: flex;
     overflow: auto;
     flex: none;
-    width: 30vw;
+    width: 43.5vw;
     height: 30vh;
     flex-flow: column nowrap;
   }
@@ -254,3 +253,5 @@ body {
     background-color: rgb(234, 238, 17);
   }
 </style>
+<br>
+<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/snap-scroll-type" target="_blank"> here</a></i>.
