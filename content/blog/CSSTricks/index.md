@@ -1,7 +1,7 @@
 ---
 title: CSS can do that with images
 date: "2020-05-10T18:49:37.121Z"
-description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover."
+description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover,scroll-snap-type"
 ---
 
 *This article shares some of my most pleasing moments learning CSS, and I hope it's the same for you as well.*
@@ -180,13 +180,77 @@ img:hover {
     transform: scale(1.1);
 }
  ```
-<img src="zoom2.png">
+ <div class=hover_apply>
+    <img src="zoom2.png" alt="Zoom on hover">
+</div>
 <style>
-img:hover {
+.hover_apply img:hover {
     transform: scale(1.1);
 }
 </style>
 <br>
 <i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/zoom-on-hover" target="_blank"> here</a></i>.
 
+## 4. scroll-snap-type
 
+CSS <font color ="#905"> <span style="background-color:#e1e2e3">scroll-snap-type</span></font> property allows the developer to create well-controlled scroll experiences. This property can be used in the gallery section of the web-page.
+
+Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style="background-color:#e1e2e3">scroll-snap-type</span></font> property on a container element.  The scroll-snap-type decides the axis on which scrolling occours <b>x</b> or <b>y</b>.
+
+
+<b>Syntax</b>
+ ```CSS
+ scroll-snap-type: [none | x | y] [mandatory | proximity];
+ ```
+*The `mandatory` means the browser has to snap to a snap point whenever the user stops scrolling.*
+*The `proximity`  is less strict, it allows the browser to a snap point if it seems appropriate.* 
+
+
+ <b>CSS Example</b>
+ ```CSS
+.y-scrolling {
+      scroll-snap-type: y mandatory;
+  }
+ ```
+<body>
+<div class="box y-scrolling">
+    <div>Eat</div>
+    <div>Sleep</div>
+    <div>Code</div>
+    <div>Repeat</div>
+</div>
+</body>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .box {
+    display: flex;
+    overflow: auto;
+    flex: none;
+    width: 30vw;
+    height: 30vh;
+    flex-flow: column nowrap;
+  }
+  .y-scrolling {
+      scroll-snap-type: y mandatory;
+  }
+  .box > div {
+    text-align: center;
+    scroll-snap-align: center;
+    flex: none;
+    line-height: 3;
+    font-size: 80px;
+    width: 100%;
+    height: 100%;
+  }
+  .box > div:nth-child(even) {
+    background-color: #42f2f5;
+  }
+  .box > div:nth-child(odd) {
+    background-color: rgb(234, 238, 17);
+  }
+</style>
