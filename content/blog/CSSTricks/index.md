@@ -303,7 +303,14 @@ shape-outside: values;
 
  <b>CSS Example</b>
  ```CSS
-.y-scrolling {
-      scroll-snap-type: y mandatory;
-  }
+img{
+    shape-outside: circle(85% at 10% 50%) border-box;  
+}
  ```
+The below example shows, how the text is wrapped around the image using the circle function.
+
+<img src="shape-outside.png" alt="shape-outside">
+
+
+<br>
+<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/shape-outside" target="_blank"> here</a></i>.
