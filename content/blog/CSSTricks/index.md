@@ -10,7 +10,9 @@ CSS is an abbreviated form of Cascading Style Sheet. It is used to describe how 
 
 ## 1. background-repeat
 
-The <font color ="#905"> <span style="background-color:#e1e2e3">background-repeat</span></font> property sets if and how a background image will be repeated. It is used in conjunction with the <span style="background-color:#e1e2e3">background-image</span> property. We can repeat the background image along the horizontal axis, vertical axis or not repeat it at all.<br>
+![background-repeat](./background-repeat.png)
+
+The <font color ="#905"> <span style="background-color:#e1e2e3">background-repeat</span></font> property sets how a background image will be repeated. It is used in conjunction with the <span style="background-color:#e1e2e3">background-image</span> property. We can repeat the background image along the horizontal axis, vertical axis or not repeat it at all.<br>
 *By default, a <span style="background-color:#e1e2e3">background-image</span> is repeated both vertically and horizontally.*
 
 <b>Syntax</b>
@@ -95,7 +97,7 @@ body {
     background-repeat: repeat;
 }
 ```
-![background-repeat](./background-repeat.png)<br>
+<br>
 <i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/background-repeat" target="_blank"> here</a></i>.
 
 ## 2. mask-image
