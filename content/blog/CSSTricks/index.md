@@ -218,6 +218,7 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
  The below example shows, scroll-snap-type along Y axis with mandatory value. 
 <body>
 <div class="box y-scrolling">
+    <div>Scroll</div>
     <div>Eat</div>
     <div>Sleep</div>
     <div>Code</div>
