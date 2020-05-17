@@ -1,7 +1,7 @@
 ---
-title: CSS can do that with images
+title: Simple CSS tricks with images.
 date: "2020-05-10T18:49:37.121Z"
-description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover,scroll-snap-type"
+description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover,scroll-snap-type and shape-outsie"
 ---
 
 *This article shares some of my most pleasing moments learning CSS, and I hope it's the same for you as well.*
@@ -216,7 +216,6 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
   }
  ```
  The below example shows, scroll-snap-type along Y axis with mandatory value. 
-
 <body>
 <div class="box y-scrolling">
     <div>Eat</div>
@@ -253,5 +252,58 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
     background-color: rgb(234, 238, 17);
   }
 </style>
+
 <br>
 <i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/snap-scroll-type" target="_blank"> here</a></i>.
+
+## 5. shape-outside
+
+<font color ="#905"> <span style="background-color:#e1e2e3">shape-outside</span></font> changes the shape of the items that are wrapped, instead of being restricted to a rectangular box.`shape-outside` allows to shape the content in order to fit the image.
+
+The <font color ="#905"> <span style="background-color:#e1e2e3">shape-outside</span></font>  property takes a basic shape and applies a shape function to it. This property works only for <b>floated</b> elements.
+
+
+<b>Syntax</b>
+ ```CSS
+shape-outside: values;
+ ```
+<br>
+<b>Values</b>
+
+<div class="shadow space">
+    <table class="data">
+        <tr>
+            <th style="width:85px;">Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><code>circle()</code></td>
+            <td>For creating circular shapes.</td>
+        </tr>
+        <tr>
+            <td><code>ellipse()</code></td>
+            <td>For creating elliptical shapes.</td>
+        </tr>
+        <tr>
+            <td><code>polygon()</code></td>
+            <td>For creating any shape with more than 2 vertices.</td>
+        </tr>
+        <tr>
+            <td><code>inset()</code></td>
+            <td>For creating rectangular shapes.</td>
+        </tr><tr>
+            <td><code>url()</code></td>
+            <td>For creating shape of the image present in the url.</td>
+		<tr>
+			<td><code>initial</code></td>
+			<td>The float area is unaffected.</td>
+		</tr>
+    </table>
+</div>
+
+ <b>CSS Example</b>
+ ```CSS
+.y-scrolling {
+      scroll-snap-type: y mandatory;
+  }
+ ```
