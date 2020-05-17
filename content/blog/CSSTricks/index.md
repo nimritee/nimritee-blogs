@@ -96,7 +96,7 @@ body {
 }
 ```
 ![background-repeat](./background-repeat.png)<br>
-<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/background-repeat" target="_blank"> here</a></i>.
+<i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/background-repeat" target="_blank"> here</a></i>.
 
 ## 2. mask-image
 
@@ -163,7 +163,7 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
 
  ![Masking with Images](./image.png)
  
-<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/mask-images" target="_blank"> here</a></i>.
+<i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/mask-images" target="_blank"> here</a></i>.
 
 ## 3. Zoom on hover
 A zoom effect on images when users hovers over them makes the web pages more attractive. This kind of effect can be used in galleries, selling products where you need to enlarge the image so that customers can have a better view.
@@ -192,7 +192,7 @@ img:hover {
 }
 </style>
 <br>
-<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/zoom-on-hover" target="_blank"> here</a></i>.
+<i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/zoom-on-hover" target="_blank"> here</a></i>.
 
 ## 4. scroll-snap-type
 
@@ -255,7 +255,7 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
 </style>
 
 <br>
-<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/snap-scroll-type" target="_blank"> here</a></i>.
+<i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/snap-scroll-type" target="_blank"> here</a></i>.
 
 ## 5. shape-outside
 
@@ -314,4 +314,4 @@ The below example shows, how the text is wrapped around the image using the circ
 
 
 <br>
-<i>You can view the source code<a href="https://github.com/nimritees/webpage_practices/tree/master/cssTricks/shape-outside" target="_blank"> here</a></i>.
+<i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/shape-outside" target="_blank"> here</a></i>.
