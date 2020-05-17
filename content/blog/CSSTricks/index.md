@@ -168,9 +168,19 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
 <i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/mask-images" target="_blank"> here</a></i>.
 
 ## 3. Zoom on hover
+
+ <div class=hover_apply>
+    <img src="zoom2.png" alt="Zoom on hover">
+</div>
+<style>
+.hover_apply img:hover {
+    transform: scale(1.1);
+}
+</style>
+<br>
 A zoom effect on images when users hovers over them makes the web pages more attractive. This kind of effect can be used in galleries, selling products where you need to enlarge the image so that customers can have a better view.
 
-The CSS <font color ="#905"><span style="background-color:#e1e2e3">transform</span></font> property is used for enlargemnet of images with your selected scale amount. It also provides a way to control animation speed when changing CSS properties.
+The CSS <font color ="#905"><span style="background-color:#e1e2e3">transform</span></font> property is used for enlargemnet of images with your selected scale amount.
 
  <b>Syntax</b>
  ```CSS
@@ -183,23 +193,24 @@ img:hover {
     transform: scale(1.1);
 }
  ```
- In the below example, the image zooms in on hovering.
-
- <div class=hover_apply>
-    <img src="zoom2.png" alt="Zoom on hover">
-</div>
-<style>
-.hover_apply img:hover {
-    transform: scale(1.1);
-}
-</style>
+In the above example, the image zooms in on hovering.
 <br>
+
 <i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/zoom-on-hover" target="_blank"> here</a></i>.
 
 ## 4. scroll-snap-type
 
-CSS <font color ="#905"> <span style="background-color:#e1e2e3">scroll-snap-type</span></font> property allows the developer to create well-controlled scroll experiences. This property can be used in the gallery section of the web-page.
+<body>
+<div class="box y-scrolling">
+    <div>Scroll</div>
+    <div>Eat</div>
+    <div>Sleep</div>
+    <div>Code</div>
+    <div>Repeat</div>
+</div>
+</body> <br>
 
+CSS <font color ="#905"> <span style="background-color:#e1e2e3">scroll-snap-type</span></font> property allows the developer to create well-controlled scroll experiences. This property can be used in the gallery section of the web-page.
 Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style="background-color:#e1e2e3">scroll-snap-type</span></font> property on a container element. . The scroll-snap-type decides scrolling has to be done i.e. either <b>x</b> or <b>y</b>.
 
 
@@ -217,16 +228,6 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
       scroll-snap-type: y mandatory;
   }
  ```
- The below example shows, scroll-snap-type along Y axis with mandatory value. 
-<body>
-<div class="box y-scrolling">
-    <div>Scroll</div>
-    <div>Eat</div>
-    <div>Sleep</div>
-    <div>Code</div>
-    <div>Repeat</div>
-</div>
-</body>
 <style>
 .box {
     display: flex;
@@ -255,11 +256,14 @@ Page scrolling in CSS is contolled by setting a <font color ="#905"> <span style
     background-color: rgb(234, 238, 17);
   }
 </style>
-
+ The above example shows, scroll-snap-type along Y axis with mandatory value. 
 <br>
+
 <i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/snap-scroll-type" target="_blank"> here</a></i>.
 
 ## 5. shape-outside
+
+<img src="shape-outside.png" alt="shape-outside"><br>
 
 <font color ="#905"> <span style="background-color:#e1e2e3">shape-outside</span></font> changes the shape of the items that are wrapped around it, instead of being restricted to a rectangular box.`shape-outside` allows to shape the content in order to fit the image.
 
@@ -310,10 +314,7 @@ img{
     shape-outside: circle(85% at 10% 50%) border-box;  
 }
  ```
-The below example shows, how the text is wrapped around the image using the circle function.
-
-<img src="shape-outside.png" alt="shape-outside">
-
-
+The above example shows, how the text is wrapped around the image using the circle function.
 <br>
+
 <i>You can view the source code<a href="https://github.com/nimritee/webpage_practices/tree/master/cssTricks/shape-outside" target="_blank"> here</a></i>.
