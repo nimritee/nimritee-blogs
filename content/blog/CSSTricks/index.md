@@ -1,12 +1,12 @@
 ---
 title: Simple CSS tricks with images.
 date: "2020-05-10T18:49:37.121Z"
-description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover,scroll-snap-type and shape-outside"
+description: "Simple CSS techniques with images that would help you develop web pages a little better and faster. Among these are backgroud-repeat, mask-image, zoom on hover,scroll-snap-type, and shape-outside"
 ---
 
 *This article shares some of my most pleasing moments of learning CSS, I hope it's the same for you as well.*
 
-CSS is an abbreviated form of Cascading Style Sheet. It is used to describe how HTML elements should be displayed. CSS can not only provide colours, positions to the HTML elements, etc., but it can also create animations and enhance your web page. It's totally worth to know some useful tips and tricks which will help you to create amazing web pages.
+CSS is an abbreviated form of Cascading Style Sheet. It is used to describe how HTML elements should be displayed. CSS can not only provide colors, positions to the HTML elements, etc., but it can also create animations and enhance your web page. It's totally worth to know some useful tips and tricks which will help you to create amazing web pages.
 
 ## 1. background-repeat
 
@@ -102,41 +102,26 @@ body {
 
 ## 2. mask-image
 
-*What is image masking?* <br>
-CSS masking allows us to define a mask shape which is then applied to the image. Anything that comes outside the mask shape is removed, and the rest is displayed. This is called Image masking. It hides some portion of the image and to reveals the rest. It is pretty much works like masking in Photoshop.
+![Linear-Gradient](./linear.png)
 
-Let's say you want to use an image, but want to show certain parts of it. You can achieve this bt using the <font color ="#905"><span style="background-color:#e1e2e3">mask-image</span></font> property in CSS. Masking can be performed using gradients and images.
+Let's say you want to use an image, but only want to show certain parts of it. You can achieve this using the <font color ="#905"><span style="background-color:#e1e2e3">mask-image</span></font> property. CSS masking allows us to define a mask shape which is then applied to the image. Anything that comes outside the mask shape is cut out, and the rest is displayed. It is pretty much works the same as masking in Photoshop.
 
 *Anything that’s 100% black in the image mask will be completely visible, anything that’s 100% transparent will be completely hidden, and anything in-between will be partially masked in the image.*
 
-### Masking using Gradients
-- Linear Gradient Masking<br>
-<b>Syntax</b>
-```CSS
- mask-image:linear-gradient( [ <angle> | to [ left | right ] 
- || [ top | bottom ] ], <color>[ <percentage> | <length> | <transparent>] );
-  ```
-  
-  <b>CSS Example </b>
+Masking can be performed in two ways, **Masking using Gradients** and **Masking with images**.<br>
+
+<b>CSS Example - Linear Gradient Masking</b>
+
 ```CSS
 #masked{
 -webkit-mask-image: linear-gradient(to bottom, transparent 5%, black 75%);
 mask-image: linear-gradient(to bottom, transparent 5%, black 75%); 
 }
 ```
-In the below image, 1st part is the original image and second part is masked image with linear-gradient.
+In the above image, 1st part is the original image and second part is masked image with linear-gradient.
 
-![Linear-Gradient](./linear.png)
+<b>CSS Example - Radial Gradient Masking</b>
 
-- Radial Gradient Masking<br>
-<b>Syntax</b>
-```CSS
-mask-image:radial-gradient([[circle || <length>] [at <position>], |
-[ellipse || [<length> | <percentage>]] [at <position>], |
-[[circle | ellipse] || <extent-keyword>] [at <position>], |
-at <position>,] <color>[ <percentage> | <length> | <transparent>])
-```
-<b>CSS Example</b>
 ```CSS
  #masked{
 -webkit-mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 50%);
@@ -145,16 +130,9 @@ mask-image: radial-gradient(ellipse 20% 90% at 27% 50%, black 40%, transparent 5
  ```
  In the below image, 1st part is the original image and second part is masked image with radial-gradient.
 
-
 ![Radial-Gradient](./radial.png)
 
-### Masking using Images
-
- <b>Syntax</b>
- ```CSS
- mask-image: url(mask.png);
- ```
- <b>CSS Example</b>
+ <b>CSS Example - Masking with  Images</b>
  ```CSS
  #masked{
  -webkit-mask-image: url(https://images.png);
