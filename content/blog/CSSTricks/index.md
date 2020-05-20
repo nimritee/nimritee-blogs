@@ -1,5 +1,5 @@
 ---
-title: 5 useful CSS tricks with images.
+title: 5 useful CSS tricks with images
 date: "2020-05-10T18:49:37.121Z"
 description: "Simple CSS techniques with images that would help you develop web pages attractive and faster. These include backgroud-repeat, mask-image, zoom on hover,scroll-snap-type, and shape-outside."
 ---
