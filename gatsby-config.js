@@ -3,7 +3,7 @@ module.exports = {
     title: `Technical Blogs`,
     author: {
       name: `Nimritee Sirsalewala`,
-      summary: `Passionate Coder, Aspiring Entrepreneur.`,
+      summary: `Passionate Coder, Aspiring Leader.`,
     },
     description: `A tech blog.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
