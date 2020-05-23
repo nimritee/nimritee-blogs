@@ -20,6 +20,8 @@ const SEO = ({ description, lang, meta, title }) => {
             description
             social {
               linkedin
+              instagram
+              github
             }
           }
         }
@@ -67,6 +69,38 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           name: `linkedin:description`,
+          content: metaDescription,
+        },
+        {
+          name: `instagram:card`,
+          content: `summary`,
+        },
+        {
+          name: `instagram:creator`,
+          content: site.siteMetadata.social.instagram,
+        },
+        {
+          name: `instagram:title`,
+          content: title,
+        },
+        {
+          name: `instagram:description`,
+          content: metaDescription,
+        },
+        {
+          name: `github:card`,
+          content: `summary`,
+        },
+        {
+          name: `github:creator`,
+          content: site.siteMetadata.social.github,
+        },
+        {
+          name: `github:title`,
+          content: title,
+        },
+        {
+          name: `github:description`,
           content: metaDescription,
         },
       ].concat(meta)}
