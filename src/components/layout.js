@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
+//import Subscribe from "./Subscribe.jsx" 
+//<Subscribe /> Add below
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {

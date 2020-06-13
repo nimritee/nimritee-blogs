@@ -1,3 +1,9 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 module.exports = {
   siteMetadata: {
     title: `Technical Blogs`,
@@ -5,8 +11,8 @@ module.exports = {
       name: `Nimritee Sirsalewala`,
       summary: `Passionate Coder, Aspiring Leader.`,
     },
-    description: `A tech blog.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `A blog about web-development and software testing.`,
+    siteUrl: `https://blogs.nimritee.com/`,
     social: {
       linkedin: `nimritee`,
       instagram: `nimritee`,
@@ -14,6 +20,15 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-material-ui`, 
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GA_TRACKING_ID
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -68,7 +83,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/logo.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -77,6 +92,12 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
+    },
+    {
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:process.env.MAILCHIMP_ENDPOINT
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
