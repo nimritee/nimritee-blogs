@@ -101,7 +101,7 @@ th {
   </thead>
   <tbody>
     <tr>
-      <td>Accuracy</td>
+      <td><i class="fab fa-lg fa-linkedin"></i>Accuracy</td>
       <td>Manual Testing may not be accurate always.</td>
       <td>Automated Testing is highly accurate as compared to manual testing.</td>
     </tr>
