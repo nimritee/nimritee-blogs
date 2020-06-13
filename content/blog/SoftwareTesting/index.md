@@ -1,5 +1,5 @@
 ---
-title: What a small bug in software can do?
+title: Software testing & Growing Business needs
 date: "2020-06-14T08:38:37.121Z"
 description: "Software testing discovers bugs during the development phase, ensuing a smooth user experience. It makes the software more reliable and easy to use. The need of Automated Testing. Is Selenium the best Automation Testing Tool?"
 ---
