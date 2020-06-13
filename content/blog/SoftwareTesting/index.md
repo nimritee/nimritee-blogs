@@ -71,24 +71,23 @@ Ex:
 ![Manual Testing](./ManualTesting.png)
 
 <style>
-table.customTable {
-  width: 100%;
-  background-color: #FFFFFF;
-  border-collapse: collapse;
-  border-width: 2px;
-  border-color: #000000;
-  border-style: inset;
-  color: #000000;
-}
 
 table.customTable td, table.customTable th {
-  border-width: 1px;
-  border-color: #000000;
-  border-style: inset;
+  border: 1px solid rgba(72, 94, 144, 0.16)
 }
 
 table.customTable thead {
-  background-color: #25ABF8;
+  background-color: #efefef;
+}
+
+td {
+  width: 25%;
+  padding: 0px;
+  padding-left: 5px !important;
+  vertical-align: baseline
+}
+th {
+    text-align: center;
 }
 </style>
 
