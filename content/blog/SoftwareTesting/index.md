@@ -1,7 +1,7 @@
 ---
 title: Software testing & Growing Business needs
 date: "2020-06-14T08:38:37.121Z"
-description: "Software testing discovers bugs during the development phase, ensuing a smooth user experience. It makes the software more reliable and easy to use. The need of Automated Testing. Is Selenium the best Automation Testing Tool?"
+description: "Software testing is imperative, as it controls the success rate and the growth of the business. I have gathered few business problems and tried answering the issues in this blogs, by focusing on Frontend Automated Testing using Selenium."
 ---
 
 ![Software Testing](./TestingHero.png)
@@ -14,7 +14,7 @@ Yes, Software Testing is an important phase of the Software Development Life Cyc
 2. Provide stable and bug-free products to the customers.
 3. Meet the expectations of customers by delivering the feature in short intervals.
 4. Following the Agile development, we need to fix the issues at the earliest.
-5. Make a full proof system.
+5. Make a fool proof system.
 6. Shift left model (Testing should begin at the very early stage of SDLC).
 
 ### Example
